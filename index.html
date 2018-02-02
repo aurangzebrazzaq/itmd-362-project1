@@ -8,10 +8,16 @@
   <link rel="stylesheet" media="screen" href="screen.css" />
   <link rel="stylesheet" href="//basehold.it/26" />
 </head>
+
 <body>
+  <header id="header">
+    <h1>Join ESW!</h1>
+  </header>
   <main id="primary">
-    <h1>Sign Up Here!</h1>
-    <form id = "contactForm" action="#null" method="get" novalidate="novalidate">
+    <figure id="fun">
+          <img src="media/esw_banner.png" alt="ESW" />
+        </figure>
+    <form id="contactForm" action="#null" method="get" novalidate="novalidate">
       <ol>
         <li>
           <label for="name">Name:</label>
@@ -25,8 +31,13 @@
           <label for="phone">Phone Number:</label>
           <input type="tel" id="phoneNumber" name="phone" placeholder="(XXX)-XXX-XXXX" />
         </li>
-            <button type="submit">Sign Up!</button>
-          </li>
+        <li>
+          <input type="checkbox" id="checkbox" name="checkbox">
+          <label for="checkbox"> I would like to recieve weekly updates</label>
+        </li>
+        <li>
+          <input type="submit" name="button" id="button" value="Sign Up!" />
+        </li>
       </ol>
     </form>
   </main>
