@@ -14,11 +14,20 @@ html {
   line-height: 1.222em;
   font-family: "Pathway Gothic One", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
-
+body {
+  background-image: url("../media/ufarm.jpg");
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 h1 {
   font-size: 2.25em; /* 40.5 / 18 = 2.25 */
   line-height: 1.0864em; /* 44 / 40.5 = 1.0864 */
   text-align: center;
+  color: green;
+  text-shadow: 0.05em 0.05em white;
 }
 h2 {
   font-size: 1.5em; /* 27 / 18 = 1.5 */
@@ -48,6 +57,15 @@ img {
   width: 50%;
 }
 
+form {
+  background-color: rgba(0, 250, 0, 0.4);
+  align-content: center;
+  width: 18em;
+  border-radius: 0.8em;
+  margin: auto;
+  margin-top: 0.5em;
+}
+
 #button {
   border: none;
   cursor: pointer;
@@ -63,4 +81,5 @@ img {
 
 footer {
   text-align: center;
+  color: green;
 }
