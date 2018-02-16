@@ -62,7 +62,7 @@ img {
 }
 
 form {
-  background-color: rgba(0, 250, 0, 0.6);
+  background-color: rgba(0, 250, 0, 0.64);
   align-content: center;
   width: 18em;
   border-radius: 0.8em;
@@ -83,12 +83,8 @@ form {
   background-color: #25B936;
 }
 
-#learn_more {
-  background-color: rgba(0, 190, 0, 0.6);
-  padding: 8px;
-  border-radius: 0.8em;
-  position: relative;
-  top: -15px;
+#AboutUs {
+  top: -2em; /* no work */
 }
 
 footer {
