@@ -1,20 +1,16 @@
-$('#contactForm').on('submit', function(e) {
-  var phoneNo = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
-  if (phoneNumber.value.match(phoneNo)) {
-    console.log('working');
-    submitted();
-  } else {
-    console.log("incorrect phone number")
-    resubmit();
-  }
+// Clicking anywhere in the li focuses the child <input>
+$('html').removeClass('nojs').addClass('js');
+
+$('.inputs li').on('click', function() {
+  $(this).find('input').focus();
 });
 
-function submitted() {
-  console.log('The form was successfully submitted.');
-  $(contactForm).remove();
-  $('body').append('<h1>Thank You. Check Your Email </h1>');
-}
-
-function resubmit() {
-  window.alert("Enter a correct phone number.");
-}
+$('#email').on('keyup', function(){
+  var email = {
+    val: $(this).val(),
+    pat: /^[^\s@]+@[^\s@]+$/
+  }
+  if((email.pat).test(email.val)) {
+    $('input[type="submit"]').addClass('show');
+  }
+});
