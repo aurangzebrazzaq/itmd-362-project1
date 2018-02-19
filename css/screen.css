@@ -58,7 +58,7 @@ img {
 }
 
 form {
-  background-color: rgba(0, 250, 0, 0.64);
+  background-color: rgba(0, 220, 0, 0.7);
   align-content: center;
   width: 18em;
   border-radius: 0.8em;
@@ -66,7 +66,15 @@ form {
   margin-top: 0.5em;
 }
 
-#button {
+input:invalid {
+  box-shadow: 0 0 5px 1px red;
+}
+
+input:valid {
+  border: 2px solid black;
+}
+
+#submit {
   border: yes;
   cursor: pointer;
   background-color: #1FC025;
@@ -75,8 +83,8 @@ form {
   border-radius: 0.8em;
 }
 
-#button:hover {
-  background-color: #25B936;
+#submit:hover {
+  background-color: #22A831;
 }
 
 #AboutUs {
