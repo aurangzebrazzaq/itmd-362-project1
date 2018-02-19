@@ -69,6 +69,19 @@ form {
   margin: auto;
   margin-top: 0.5em;
 }
+form ol li {
+  display: flex;
+}
+form ol li label[for="name"],
+form ol li label[for="email"] {
+  flex: 0 1 2.25em;
+  text-align: right;
+  padding-right: 0.2em;
+}
+form ol li input {
+  flex-grow: 1;
+  width: 0;
+}
 
 input:invalid {
   box-shadow: 0 0 1rem 0.5rem #F72E2C;
@@ -124,5 +137,8 @@ footer {
   }
   form {
     width: 12em;
+  }
+  form input {
+    vertical-align: middle;
   }
 }
