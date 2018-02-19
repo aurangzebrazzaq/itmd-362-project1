@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="nojs">
+<html lang="en" class="nojs js">
 
 <head>
   <title>Sign Up for ESW</title>
@@ -8,7 +8,7 @@
   <link rel="stylesheet" media="screen" href="css/screen.css" />
   <!-- <link rel="stylesheet" href="//basehold.it/26" /> -->
   <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
-  <link rel="shortcut-icon" type="image/x-icon" href="/media/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="/media/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/media/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/media/favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/media/apple-touch-icon.png">
@@ -23,36 +23,38 @@
     <figure id="esw">
       <img src="media/esw_banner.png" class="ESW" alt="ESW" />
     </figure>
+    <section>
     <header id="header">
       <h1>Join ESW!</h1>
     </header>
-    <form id="contactForm" action="#null" method="get" novalidate="novalidate">
+    <form id="contactForm" action="#null" method="get">
       <ol>
-        <li>
+        <li id=input-email>
           <label for="name">Name:</label>
           <input type="text" id="name" name="username" />
         </li>
-        <li>
+        <li id="input-email">
           <label for="email">E-mail:</label>
-          <input placeholder="you@example.com" type="email" id="email" name="email" />
+          <input type="email" id="email" name="email"  placeholder="you@example.com" autocomplete="off"/>
         </li>
-        <li>
+        <li id="check">
           <input type="checkbox" value="1" id="checkbox" name="checkbox" class="checkbox">
           <label for="checkbox"> I would like to recieve weekly updates</label>
         </li>
-        <li>
-          <input type="submit" name="button" id="button" value="Sign Up!" />
+        <li id="input-submit">
+          <input type="submit" id="submit" value="Sign Up!" />
         </li>
       </ol>
     </form>
     <footer>
       <form id=AboutUs>
-        <p>About Us:</p>
+        <h2>About Us:</h2>
         <p>ESW@IIT is the Illinois Institute of Technology chapter of Engineers for a Sustainable World. We're an active student organization made up IIT students from all different disciplines with the goal of promoting sustainability on campus, in our
           community, and around the world.</p>
-        <a href="https://sites.google.com/site/eswiit1/"> Learn More</a>
+        <a class="gone" href="https://sites.google.com/site/eswiit1/"> Learn More</a>
       </form>
     </footer>
+  </section>
   </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/site.js"></script>
