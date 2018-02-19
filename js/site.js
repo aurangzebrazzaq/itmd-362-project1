@@ -5,12 +5,18 @@ $('.inputs li').on('click', function() {
   $(this).find('input').focus();
 });
 
-$('#email').on('keyup', function(){
+$('#contactForm').on('submit', function(e) {
   var email = {
-    val: $(this).val(),
+    val: $('#email').val(),
     pat: /^[^\s@]+@[^\s@]+$/
   }
-  if((email.pat).test(email.val)) {
-    $('input[type="submit"]').addClass('show');
+
+  if (email.pat.test(email.val)) {
+    e.preventDefault();
+    console.log('Valid Email');
+    email.pat = true;
+    $(this).remove();
+    $('#AboutUs').empty();
+    $('form').append('<h2>Thank You for signing up for ESW!</h2>');
   }
 });
