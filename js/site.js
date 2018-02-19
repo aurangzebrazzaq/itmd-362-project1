@@ -9,7 +9,7 @@ $('#contactForm').on('submit', function(e) {
   var email = {
     val: $('#email').val(),
     pat: /^[^\s@]+@[^\s@]+$/
-  }
+  };
 
   if (email.pat.test(email.val)) {
     e.preventDefault();
